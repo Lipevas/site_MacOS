@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ana</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <header>
+        <h3>Home</h3>
+        <a href="#sobremim"><h3>macOS</h3></a>
+        <a href="#projetos"><h3>Recursos visuais e funcionais do macOS</h3></a>
+        <a href="#contatos"><h3>Vantagens</h3></a>
+    </header>
+
+    <main>
+        <h1 id="sobremim">Sobre mim</h1>
+        <div class="sobre">
+            <div class="sobremim">
+                <p>
+                    Sistema operacional macOS <br><br>
+                    macOS é o sistema operacional criado pela Apple para os computadores Mac. Conhecido por seu design elegante, integração com o ecossistema Apple e alta performance, o macOS é amplamente utilizado por designers, desenvolvedores e criadores de conteúdo. O macOS tem suas raízes na visão inovadora de Steve Jobs, cofundador da Apple. Após seu retorno à empresa na década de 1990, Jobs liderou a criação de um sistema operacional moderno, baseado no Unix, que combinasse estabilidade, design elegante e facilidade de uso. Essa visão deu origem ao Mac OS X, que evoluiu para o atual macOS, usado por milhões de pessoas ao redor do mundo.
+                </p>
+            </div>
+            <div>
+                <img class="imagemFOTO" src="img/macOS_Logo.webp" alt="Logo macOS">
+            </div>
+        </div>
+
+        <h1 id="projetos">Recursos visuais e funcionais do macOS</h1>
+        <div class="projetos">
+            
+            <div>
+                <img class="imagemPROJETO" src="img/interface_macOS.jpg" alt="Interface macOS" onclick="toggleTexto('texto-interface')">
+                <div id="texto-interface" class="texto-oculto">
+                    <p><strong>Interface do macOS:</strong> Moderna, limpa e intuitiva, com foco em produtividade. Destaque para o Dock, Mission Control e transições suaves.</p>
+                </div>
+            </div>
+
+            
+            <div>
+                <img class="imagemPROJETO" src="img/system1_imagem.jpg" alt="Ecossistema Apple" onclick="toggleTexto('texto-ecossistema')">
+                <div id="texto-ecossistema" class="texto-oculto">
+                    <p><strong>Ecossistema Apple:</strong> Integração entre iPhone, Mac, iPad e Apple Watch, com recursos como AirDrop, Handoff e iCloud.</p>
+                </div>
+            </div>
+
+            
+            <div>
+                <img class="imagemPROJETO" src="img/ferramentas do macOS.jpg" alt="Ferramentas macOS" onclick="toggleTexto('texto-ferramentas')">
+                <div id="texto-ferramentas" class="texto-oculto">
+                    <p><strong>Ferramentas do macOS:</strong> Inclui Finder, Spotlight, Siri, Time Machine e mais. Tudo feito para facilitar o dia a dia do usuário.</p>
+                </div>
+            </div>
+        </div>
+
+        <h1 id="contatos">Vantagens</h1>
+            <div class="contatos">
+        <a href="mailto:seuemail@example.com" target="_blank">
+        <img alt="E-mail" src="img/vantagens_ppw.PNG" class="contato-img">
+    </a>
+</div>
+    </main>
+
+    <footer>
+        <h2>Desenvolvido por Felipe</h2>
+    </footer>
+
+    <!-- JavaScript para mostrar/ocultar os textos -->
+    <script>
+        function toggleTexto(id) {
+            const texto = document.getElementById(id);
+            texto.classList.toggle('ativo');
+        }
+    </script>
+</body>
+</html>

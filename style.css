@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #90CAF9; 
+    color: #0D47A1; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+header{
+    display:flex;
+    justify-content:space-between;
+    background-color:#0D47A1;
+    height: 80px;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: fixed;
+    width: 100%;
+    
+}
+
+.sobre {
+
+display: flex;
+justify-content: space-between;
+background-color: #90CAF9;
+color: #0D47A1;
+}
+.sobremim {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    font-size: 20px;
+    
+
+}
+
+h1 {
+text-align: center;
+}
+.imagemFOTO{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
+    border: 5px solid #90CAF9;
+}
+
+.projetos{
+display: flex;
+justify-content: space-between;
+background-color: #90CAF9;
+
+}
+.imagemPROJETO{
+    height: 300px;
+    width: 300px;
+    margin-top: 200px;
+    margin-bottom: 200px; 
+    border-radius: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+    
+
+     
+    
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: #90CAF9;
+    
+    
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1A2B4C;
+    height: 200px;
+    align-items: center;
+    color: yellow;
+}
+a{
+    text-decoration: none;
+    color: yellow
+}
+#projetos{
+
+background-color: #0D47A1;
+font-size: 50px;
+padding-top: 2%;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-bottom:2%;
+
+
+
+
+}
+#contatos{
+
+background-color: #0D47A1;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-top: 2%;
+padding-bottom:2%;
+font-size:45px ;
+gap: 50px
+;
+}
+.imagemPROJETO:hover {
+transform: scale(1.2);
+}
+.texto-oculto {
+    display: none;
+    background-color: #FFFFFF;
+    color:#0D47A1;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #90CAF9;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.texto-oculto.ativo {
+    display: block;
+}
